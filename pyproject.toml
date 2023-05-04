@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "supervised-learning"
+version = "0.1.0"
+description = "A supervised learning project for the Inteligent Systems Couse at UFPE"
+authors = ["Gabriel Queiroz <gqmv@cin.ufpe.br>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.1"
+scikit-learn = "^1.2.2"
+ipykernel = "^6.22.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
